@@ -1,9 +1,5 @@
 const mainDiv = document.querySelector('.main');
 
-mainDiv.addEventListener('mouseover', function(){
-    
-});
-
 function createGrid() {
      for(let i = 0; i < 16; i++) {
          for(let j = 0; j < 16; j++){
@@ -13,8 +9,17 @@ function createGrid() {
         }
     }
 }
-
 createGrid();
+
+// used to change the colorof the divs
+mainDiv.addEventListener('mouseover', function(event){
+    if(event.target === mainDiv) {
+        mainDiv.style.backgroundColor = 'white';
+    } else {
+    (event.target).style.backgroundColor = 'red';
+    }
+ });
+
 
 // function hoverColor() {
 //     row.style.backgroundColor = 'red';
