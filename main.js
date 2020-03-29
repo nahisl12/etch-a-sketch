@@ -9,7 +9,6 @@ function createGrid() {
         }
     }
 }
-createGrid();
 
 // used to change the colorof the divs
 mainDiv.addEventListener('mouseover', function(event){
@@ -20,6 +19,20 @@ mainDiv.addEventListener('mouseover', function(event){
     }
  });
 
+ // RESET BUTTON
+ const resetBtn = document.querySelector('.resetGrid');
+ resetBtn.addEventListener('click', function(){
+    let child = mainDiv.lastElementChild;
+    while(child){
+        mainDiv.removeChild(child);
+        child = mainDiv.lastElementChild;
+        console.log("w");
+    }
+    createGrid();
+ });
+
+
+ createGrid();
 
 // function hoverColor() {
 //     row.style.backgroundColor = 'red';

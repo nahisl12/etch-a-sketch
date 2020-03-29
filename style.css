@@ -24,3 +24,10 @@
     width: 45px;
     height: 45px;
 }
+
+.resetGrid {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
