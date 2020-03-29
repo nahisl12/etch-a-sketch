@@ -26,12 +26,12 @@ function createGrid(row, col) {
 // createBoard(16,16);
 
 
-// used to change the colorof the divs
+// used to change the color of the divs
 mainDiv.addEventListener('mouseover', function(event){
     if(event.target === mainDiv) {
         mainDiv.style.backgroundColor = 'white';
     } else {
-    (event.target).style.backgroundColor = 'red';
+    (event.target).style.backgroundColor = 'yellow';
     }
  });
 
